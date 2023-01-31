@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>iut.universite-cote-dazur</groupId>
+		<artifactId>demo-resources-javafx-multimodule</artifactId>
+		<version>1.0</version>
+	</parent>
+  
+	<artifactId>lanceur</artifactId>
+	<version>1.0</version>
+
+
+  <properties>
+    <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
+  </properties>
+
+  <dependencies>
+      <dependency>
+          <groupId>iut.universite-cote-dazur</groupId>
+          <artifactId>noyaufonctionnel</artifactId>
+          <version>1.0</version>
+      </dependency>
+	
+	<dependency>
+      <groupId>iut.universite-cote-dazur</groupId>
+      <artifactId>ihm</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>${javafx.maven.plugin.version}</version>
+        <configuration>
+          <mainClass>Lanceur</mainClass>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+  
+</project>
