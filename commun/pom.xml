@@ -13,7 +13,7 @@
 
 
     <properties>
-        <javafx.version>19-ea+2</javafx.version>
+        <javafx.version>22-ea+16</javafx.version>
     </properties>
 
   <dependencies>
